@@ -67,6 +67,9 @@ async function run() {
 app.get("/", (req, res)=>{
     res.send("Hello from mechanics")
 })
+app.get("/hello", (req, res)=>{
+    res.send("Hello from car mechanics")
+})
 
 app.listen(port, ()=>{
     console.log("Listening to port", port)
